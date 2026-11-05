@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dirang Bohle Trading and Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #142b4a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #f3a13b;
+            font-size: 21px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f3a13b;
+        }
+
+        /* Homepage */
+        .home {
+            background-color: #2463a6;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .home h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .home a {
+            background-color: #f3a13b;
+            color: #142b4a;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .home a:hover {
+            background-color: white;
+        }
+
+        /* General sections */
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #142b4a;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            color: #2463a6;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            margin-bottom: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .product button {
+            background-color: #2463a6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #142b4a;
+        }
+
+        /* About section */
+        .about {
+            background-color: white;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Contact section */
+        .contact {
+            background-color: #e8eef5;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 25px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .contact textarea {
+            height: 120px;
+        }
+
+        .contact button {
+            padding: 13px;
+            background-color: #2463a6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contact button:hover {
+            background-color: #142b4a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #142b4a;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .home h1 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+
+        <h2>Dirang Bohle Trading and Projects</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Homepage -->
+    <div class="home" id="home">
+
+        <h1>Everything Your Office Needs</h1>
+
+        <p>
+            Your trusted supplier of stationery,
+            printers and office furniture.
+        </p>
+
+        <a href="#products">Explore Our Products</a>
+
+    </div>
+
+
+    <!-- Products section -->
+    <section id="products">
+
+        <h2>Our Products</h2>
+
+        <p>
+            We provide quality office products
+            at affordable prices.
+        </p>
+
+        <div class="products">
+
+
+            <!-- Stationery -->
+            <div class="product">
+
+                <img src="https://placehold.co/300x180?text=Stationery"
+                     alt="Stationery supplies">
+
+                <h3>Stationery</h3>
+
+                <p>
+                    We supply pens, pencils, notebooks,
+                    paper, files and other office essentials.
+                </p>
+
+                <button onclick="location.href='#contact'">
+                    Enquire Now
+                </button>
+
+            </div>
+
+
+            <!-- Printers -->
+            <div class="product">
+
+                <img src="https://placehold.co/300x180?text=Printers"
+                     alt="Office printers">
+
+                <h3>Printers</h3>
+
+                <p>
+                    We supply reliable printers, ink cartridges,
+                    toner and printing accessories.
+                </p>
+
+                <button onclick="location.href='#contact'">
+                    Enquire Now
+                </button>
+
+            </div>
+
+
+            <!-- Office furniture -->
+            <div class="product">
+
+                <img src="https://placehold.co/300x180?text=Office+Furniture"
+                     alt="Office furniture">
+
+                <h3>Office Furniture</h3>
+
+                <p>
+                    We provide office desks, comfortable chairs,
+                    cabinets and storage solutions.
+                </p>
+
+                <button onclick="location.href='#contact'">
+                    Enquire Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About us -->
+    <section class="about" id="about">
+
+        <h2>About Our Company</h2>
+
+        <p>
+            Dirang Bohle Trading and Projects is a company
+            that specialises in supplying stationery, printers
+            and office furniture. Our goal is to provide
+            businesses, schools and individuals with quality
+            office products at affordable prices.
+
+            We believe in good customer service, reliable
+            products and making it easier for customers to
+            find everything they need for their workplaces
+            in one place.
+        </p>
+
+    </section>
+
+
+    <!-- Contact us -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Do you need office supplies?
+            Get in touch with us.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            info@dirangbohle.co.za
+        </p>
+
+        <p>
+            <strong>Phone:</strong>
+            +27 12 345 6789
+        </p>
+
+        <p>
+            <strong>Location:</strong>
+            South Africa
+        </p>
+
+
+        <form action="mailto:info@dirangbohle.co.za"
+              method="post"
+              enctype="text/plain">
+
+            <input
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <input
+                type="email"
+                name="Email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <textarea
+                name="Message"
+                placeholder="Write your message here"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Dirang Bohle Trading and Projects.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Quality Products | Reliable Service
+        </p>
+
+    </footer>
+
+</body>
+</html>
